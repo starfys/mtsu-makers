@@ -1,0 +1,57 @@
+<!-- <html lang="en" id="makers_homepage" class> -->
+<!DOCTYPE html>
+<!--only wrote html once in my life-->
+<html lang="en">
+<head>
+	<title>Page Title</title>
+	</head>
+	<body>
+	<h1 style="text-align:center">MTSU Makers</h1>
+	<p style="text-align:center">Testing, this web page is from 1990	</p>
+	<p id="testing" style="text-align:center"></p>
+	<!--I think this is css-->
+	<style>
+	
+h1 {
+    border-bottom: 3px solid #cc9900;
+    color: #996600;
+    font-size: 30px;
+}
+table, th , td  {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    padding: 5px;
+}
+table tr:nth-child(odd)	{
+    background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+    background-color: #ffffff;
+}
+</style>
+	<script>
+	//yay I can Javascript
+	//essentially the about page, might link to a more specific 'about' page
+	var people = [
+			{"firstName": "Stephen", "lastName":"Kinser", "github":"https://github.com/Riuchando"},
+			{"firstName": "Kris", "lastName":"Brown", "github":"https://github.com/KrisB88"},
+			{"firstName": "Steven", "lastName":"Sheffey", "github":"https://github.com/Starfys"}
+			];
+	
+	var out; //output to the webpage 
+	
+	out = "<h1>Contributors:</h1>" + "<table>"; // optional label
+	 for (var i = 0 ; i< people.length; i++){	// go through every user put into a table
+	out += 
+	"<tr><td>" +people[i].firstName+"</td><td>"
+			  +people[i].lastName+"</td><td>"
+			  +"<a href=" + people[i].github+ "> github </a>" +"</td></tr>";
+	} 
+	out += "</table>";
+	
+	document.getElementById("testing").innerHTML = out;
+	
+	</script>
+	
+	</body>
+	</html>
