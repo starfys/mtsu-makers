@@ -1,22 +1,6 @@
-<!-- <html lang="en" id="makers_homepage" class> -->
-<!DOCTYPE html>
-<!--only wrote html once in my life-->
-<html lang="en">
-<head>
-	<title>Page Title</title>
-	</head>
-	<body>
-	<link rel="stylesheet" type="text/css" href="testingCSS.css">
-	
-	<h1 style="text-align:center">MTSU Makers</h1>
-		 
-		<p id="topBit">Testing, this web page is from 1990	</p>
-		
-	<div>
-	<!--<script src="peopleDatabase.js" type="text/javascript"></script>-->
-	<p id="testing"></p>
-</div>
-	<script>
+<script type="text/javascript">
+function peopletable(){
+	//yay I can Javascript
 	//essentially the about page, might link to a more specific 'about' page
 	var people = [
 			{"firstName": "Stephen", "lastName":"Kinser", "github":"https://github.com/Riuchando"},
@@ -34,9 +18,6 @@
 			  +"<a href=" + people[i].github+ "> github </a>" +"</td></tr>";
 	} 
 	out += "</table>";
-	
-	document.getElementById("testing").innerHTML = out;
-	
-	</script>
-	</body>
-	</html>
+	document.write(out)
+}
+</script>
