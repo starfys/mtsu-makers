@@ -1,0 +1,31 @@
+{% if User_Name_List %}
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="js/bootstrap.min.js"></script>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Makers Home Page</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="/userInfo/">Ongoing projects</a></li>
+        <li><a href="#">Members</a></li>
+        <li><a href="#">Other stuff</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+<table class = "table table-striped">
+
+
+    {% for UserName in User_Name_List %}
+        <tr><td><a href="/userInfo/{{UserName.id}}/">{{ UserName.first_name }} {{ UserName.last_name }}</a></td>
+		<td><a href="{{UserName.github}}/"> Github</td></tr>
+    {% endfor %}
+</table>
+</div>
+{% else %}
+    <p>No Users have Registered.</p>
+{% endif %}

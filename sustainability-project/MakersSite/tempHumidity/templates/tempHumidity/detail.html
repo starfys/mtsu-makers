@@ -1,0 +1,36 @@
+<h1>{{ question.question_text }}</h1>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<script src="js/bootstrap.min.js"></script>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Makers Home Page</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Ongoing projects</a></li>
+        <li><a href="#">Members</a></li>
+        <li><a href="#">Other stuff</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<div class="container">
+<table class = "table table-striped">
+<tr><td>Votes</td><td>choice</td> </tr>
+{% for choice in question.choice_set.all %}
+    <tr><td>{{choice.votes}}</td><td>{{ choice.choice_text }}</td></tr> 
+{% endfor %}
+</table></div>
+<form action="{% url 'polls:vote' question.id %}" method="post">
+{% csrf_token %}
+{% for choice in question.choice_set.all %}
+    <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
+    <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br />
+{% endfor %}
+<input type="submit" value="Vote" />
+</form>
