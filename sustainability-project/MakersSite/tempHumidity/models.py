@@ -9,4 +9,4 @@ class tempHumidity(models.Model):
 	humidity = models.FloatField()
 	date_rec = models.DateTimeField('date published')
 	def __str__(self): 
-		return "Temperature: " + str(self.temperature) + "Humidity: " + str(self.humidity)
+		return "Pi Id: " + str(self.pi_num) + " Temperature: " + str(self.temperature) + " Humidity: " + str(self.humidity)

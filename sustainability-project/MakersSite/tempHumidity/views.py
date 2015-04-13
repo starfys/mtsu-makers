@@ -9,14 +9,19 @@ from .models import tempHumidity
 
 class IndexView(generic.ListView):
 	template_name = 'tempHumidity/index.html'
-	context_object_name = 'latest_temps'
+	context_object_name = 'Latest_Temps_List'
 
 	def get_queryset(self):
 		"""Return the last five published questions."""
-		return Question.objects.filter(
-        pub_date__lte=timezone.now()
+		return tempHumidity.objects.filter(
+        date_rec__lte=timezone.now()
     ).order_by('-date_rec')[:5]
 
 class DetailView(generic.DetailView):
 	model = tempHumidity
 	template_name = 'tempHumidity/detail.html'
+	
+def index(request):
+	Latest_Temps_List = UserName.objects.order_by('-last_name')[:50]
+	context = {'Latest_Temps_List': Latest_Temps_List}
+	return render(request, 'tempHumidity/index.html', context)

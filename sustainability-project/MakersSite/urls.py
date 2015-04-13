@@ -5,4 +5,5 @@ urlpatterns = [
 	url(r'^userInfo/', include('userInfo.urls')),
 	url(r'^tempHumidity/', include('tempHumidity.urls')),
 	url(r'^admin/', include(admin.site.urls)),
+	url(r'^$', 'MakersSite.views.home', name='HomePage.html'),
 ]

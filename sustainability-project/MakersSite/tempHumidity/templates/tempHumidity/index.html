@@ -1,4 +1,4 @@
-{% if latest_question_list %}
+{% if Latest_Temps_List %}
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 <script src="js/bootstrap.min.js"></script>
 <nav class="navbar navbar-default">
@@ -20,11 +20,15 @@
 <table class = "table table-striped">
 
 
-    {% for question in latest_question_list %}
-        <tr><td><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></td></tr>
+    {% for temp in Latest_Temps_List %}
+        <tr><td><a href="/tempHumidity/tempHumidity:detail' tempHumidity.id %}">{{ temp.id }}</a></td>
+		<td>{{temp.pi_num}}</td>
+		<td>{{temp.temperature}}</td>
+		<td>{{temp.humidity}}</td>
+		<td>{{temp.date_rec}}</td></tr>
     {% endfor %}
 </table>
 </div>
 {% else %}
-    <p>No polls are available.</p>
+    <p>no temps seen</p>
 {% endif %}

@@ -1,4 +1,4 @@
-<h1>{{ question.question_text }}</h1>
+<h1>{{ temp.id }}</h1>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 <script src="js/bootstrap.min.js"></script>
 <nav class="navbar navbar-default">
@@ -25,12 +25,4 @@
 {% for choice in question.choice_set.all %}
     <tr><td>{{choice.votes}}</td><td>{{ choice.choice_text }}</td></tr> 
 {% endfor %}
-</table></div>
-<form action="{% url 'polls:vote' question.id %}" method="post">
-{% csrf_token %}
-{% for choice in question.choice_set.all %}
-    <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
-    <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br />
-{% endfor %}
-<input type="submit" value="Vote" />
 </form>
