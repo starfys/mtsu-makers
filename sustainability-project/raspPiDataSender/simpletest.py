@@ -23,6 +23,10 @@
 import Adafruit_DHT
 import time
 import requests
+
+#ID of the raspberry pi
+pi_id = 1
+
 # Sensor should be set to Adafruit_DHT.DHT11,
 # Adafruit_DHT.DHT22, or Adafruit_DHT.AM2302.
 sensor = Adafruit_DHT.DHT22
@@ -48,4 +52,4 @@ while True:
 	else:
 		print 'Failed to get reading. Try again!'
 	time.sleep(5)
-	requests.post( "http://stevensheffey.me:9000", data={ 'temperature':temperature, 'humidity': humidity } )
+	requests.post( "http://stevensheffey.me:9000", data={ 'pi_num':pi_id, 'temperature':temperature, 'humidity': humidity, 'date_rec',int(time.time()) } )
