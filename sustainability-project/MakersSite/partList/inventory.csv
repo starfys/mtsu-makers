@@ -1,0 +1,212 @@
+T34 Transmitter,Polar,34.99,A3,FALSE,1,
+MZ101B Helping Hand with magnifying glass,SE,5.79,A5,FALSE,2,
+ProtoSheild PCB,Aruino/Sparkfun,4.95,"part of set, A3",FALSE,2,
+stackable headers 8 pin,Aruino/Sparkfun,0.5,"part of set, A3",FALSE,4,
+stackable headers 6 pin,Aruino/Sparkfun,0.5,"part of set, A3",FALSE,4,
+6mm buttons,Aruino/Sparkfun,0.5,"part of set, A3",FALSE,4,
+0.1 uF Capcitors,Aruino/Sparkfun,0.25,"part of set, A3",FALSE,4,
+330 Ohm Resistor,Aruino/Sparkfun,0.15,"part of set, A3",FALSE,4,
+10k Ohm Resistor,Aruino/Sparkfun,0.05,"part of set, A3",FALSE,2,
+Momentary Push Buttons,Aruino/Sparkfun,0.5,"part of set, A3",FALSE,4,
+Panavise Jr.,Panavise,28,A3,FALSE,1,
+36 pin headers,none,5.95,"box-Row0, col1, C3",FALSE,22,
+various sized pin headers,none,0,"box-Row0, col1, C3",FALSE,172,
+GainSpan WiFi Breakout,Sparkfun,72.5,"box-Row0, col3, C3",FALSE,2,GS101MIP
+Position Sensor,Spectrasymbol/Jameco Electronics,6.95,"box-Row0, col4, C3",FALSE,1,11p4
+Flex Sensor,Spectrasymbol/Jameco Electronics,7.95,"box-Row0, col4, C3",FALSE,1,
+Breakout barometric pressure sensor,Bosch/Sparkfun,6.65,"box-Row0, col4, C3",FALSE,1,Bmp085
+Humidity Sensor Breakout,Sparkfun,16.95,"box-Row0, col4, C3",FALSE,1,HIH-4030
+unmarked touch sensor,none,0,"box-Row0, col4, C3",FALSE,1,
+magnetic switch,none,0,"box-Row0, col4, C3",FALSE,1,
+Arduino Pro Mini 328,Arduino,9.95,"box-Row0, col5, C3",FALSE,2,DEV 09218
+Arduino Fio,Arduino,24.95,"box-Row0, col5, C3",FALSE,2,DEV 10116
+Stackable Header 6 pin (for Arduino),none,0.34,"box-Row1,col1, C3",FALSE,31,
+EasyDriver Stepper Motor Driver,Sparkfun,14.95,"box-Row1,col4, C3",FALSE,1,ROB 10267
+9 Degrees of Freedom Sensor Stick,Sparkfun,49.95,"box-Row1,col4, C3",FALSE,1,"SEN 10183, new version: SEN 10724"
+Triple Axis Magnetometer,Sparkfun,45,"box-Row1,col4, C3",FALSE,2,HMC5883L
+Line Sensor Breakout,Sparkfun,2.95,"box-Row1,col4, C3",FALSE,1,QRE1113
+MQ-3 ultrasonic Sensor,unknown,0,"box-Row1,col4, C3",FALSE,1,
+Triple Axis Digital output ITG-3200 Breakout,Sparkfun,49.95,"box-Row1,col4, C3",TRUE,1,
+Digital Temperature Sensor Breakout,Sparkfun,5.95,"box-Row1,col4, C3",TRUE,1,
+Adafruit CC3000 wifi,Adafruit,18.9,"box-Row1,col5, C3",TRUE,1,
+Red/Black Gator Clips,none,0.79,"box-Row2,col1, C3",FALSE,1,
+EER35 Ferrite Core Transformers,none,0.5,"box-Row3,col3, C3",FALSE,2,
+Singular gator Clip,none,0.38,"box-Row1,col5, C3",FALSE,1,
+Diffused LED - Red 10mm,Sparkfun,0.5,"box-Row4,col3, C3",FALSE,4,COM 10632
+Diffused LED - Yellow 10mm,Sparkfun,0.5,"box-Row4,col3, C3",FALSE,4,COM 10634
+3.3 k ohm resistor,none,0.3,"box-Row4,col4, C3",FALSE,8,
+116 ohm resistor,none,0,"box-Row4,col4, C3",FALSE,4,
+jumper wires,none,0,"box-Row4,col5, C3",FALSE,5,
+Arduino Uno R3,Arduino,10.67,"box-Row5,col0, C3",FALSE,2,
+Arduino Uno R2,Arduino,15.52,"box-Row5,col0, C3",FALSE,1,
+Motor Driver Sheild,Sparkfun,24.95,"box-Row5,col1, C3",FALSE,1,DEV 09815
+Motor Driver Sheild,Sparkfun,24.95,"box-Row5,col1, C3",TRUE,1,DEV 09815
+GPS Sheild Kit,Sparkfun,59.95,"box-Row5,col1, C3",TRUE,1,KIT 13199
+Arduino Mega,Sparkfun,11.09,"box-Row5,col2, C3",FALSE,1,
+Adafruit perma proto 1/2 sized breadboard,Adafruit,4.5,"box-Row5,col2, C3",FALSE,1,
+Rohs 400 pts halfsized breadboard,none,11.49,"box-Row5,col2, C3",FALSE,1,
+AWM 1007 26awg cords,none,0,"box-Row6,col0, C3",FALSE,11,
+Servo Large Full Rotation,Sparkfun,13.95,"box-Row6,col0, C3",FALSE,1,ROB-09347
+Half-sized Breadboard,Radioshack,4.62,"box-Row5,col2, C3",FALSE,1,276-150
+D-sub connector Hood pack,Radioshack,3.19,"box-Row6,col1, C3",FALSE,2,276-1549
+D-sub connector Hood 25-pos male,Radioshack,2.37,"box-Row6,col1, C3",FALSE,1,276-1547
+D-sub connector Hood 25-pos female,Radioshack,0,"box-Row6,col1, C3",FALSE,1,276-1548
+9-volt alkaline battery,enercell,3.99,"box-Row6,col1, C3",FALSE,1,
+Eagle 9 volt Baterry clip lead connector,none,0.39,"box-Row6,col1, C3",FALSE,1,
+unsorted box (JohnWallen box ( clear box)) A4,Sparkfun,9.95,"box-Row6,col2, C3",FALSE,1,COM 09881
+Gator Clip connected by jumper wire,none,0.38,"box-Row7,col0, C3",FALSE,32,
+Chumby Hacker Board,Chumby,0,"box-Row7,col1, C3",FALSE,3,DEV 10106
+Stepper Motor with cable,none,14.95,"box-Row7,col2, C3",FALSE,1,ROB 09238
+Micro Servo 9g,none,3.99,"box-Row7,col2, C3",FALSE,1,A0090
+360 Degree Servo for Arduino 2560,SpringRC,12.8,"box-Row7,col2, C3",FALSE,1,Sm s4303r
+Small Stepper Motor,none,6.95,"box-Row7,col2, C3",FALSE,1,ROB 10551
+Midi Jack,Adafruit,1.75,"box-Row7,col2, C3",FALSE,0,adafru.it/1134
+Load Cell for weight,none,0,"box-Row7,col2, C3",FALSE,0,
+116 ohm resistor,none,0,C3,FALSE,330,
+OpenLog,Sparkfun,24.95,B3,FALSE,2,
+Heart Rate Starter pack (Polar heartrate above),Adafruit,35,A3,FALSE,1,
+Robotics Sheild Kit,Parallax Inc,87.5,A3,FALSE,1,
+Raspberry Pi infared camera,Raspberry Pi,29.95,With Jesse Williams,FALSE,1,
+Raspberry Pi infared camera,Raspberry Pi,29.95,With Jesse Williams,FALSE,1,
+Raspberry Pi 2 model B V1.1,Raspberry Pi,39.95,B3,TRUE,1,
+Micro SD adapter,Wintec Filemate,10.95,A3,FALSE,1,
+Pro Duo Reader,Wintec Filemate,0.99,A3,FALSE,1,
+USB Reader,Wintec Filemate,0,A3,FALSE,1,
+LED mixed Bag 5mm,Sparkfun,9.95,B3,FALSE,1,COM 09881
+"2.8"" Tft Lcd Touchscreen",Raspberry Pi,16.49,B3,FALSE,2,
+Brainwave Headset w/ Myndplay,NeuroSky,129.99,A3,FALSE,1,
+Rohs 400 pts halfsized breadboard,none,11.49,"unsorted box (greg's Aruino), A4",TRUE,1,
+Arduino Protosheild,Adafruit/Arduino,9.95,"unsorted box (greg's Aruino), A4",TRUE,1,
+Arduino Uno R3,Arduino,10.67,"unsorted box (greg's Aruino), A4",TRUE,1,
+Temperature-humidity sensor,Adafruit,15,"unsorted box (greg's Aruino), A4",TRUE,1,
+3.3 k ohm resistor,none,0.3,"unsorted box (greg's Aruino), A4",TRUE,1,
+jumper wires,none,0,"unsorted box (greg's Aruino), A4",TRUE,21,
+FLORA GPS Starter pack,FLORA,94.95,unsorted box A4,FALSE,1,adafru.it/1090
+022 Rosin core solder,Radioshack,7.95,unsorted box A4,FALSE,1,
+10 pcs DC +5v LED Push button,Timeharvest,3,unsorted box A4,FALSE,4,
+USB A female to USB motherboard 4-Pin IDC,Tripp Lite,3.28,unsorted box A4,FALSE,1,
+Magnefing glasss with light,none,0,unsorted box A4,FALSE,1,
+Weird Push button,none,0,unsorted box A4,FALSE,1,
+Desoldering Braid,Spirig,1.49,unsorted box A4,FALSE,1,
+Plastic Arduino one case,none,7.95,unsorted box A4,FALSE,1,
+9V batteryClip with 5.5mm plug,NexusCyber,2.99,unsorted box (clear box) A4,FALSE,1,
+Eagle 9 volt Baterry clip lead connector,none,0.39,unsorted box (clear box) A4,FALSE,1,
+Ambient Light Sensor Phototransistor ,none,0.22,unsorted box (clear box) A4,FALSE,10,
+Phototransistor IR Chip,none,0.16,unsorted box (clear box) A4,FALSE,2,
+5VDC power relay,none,2.77,unsorted box (clear box) A4,FALSE,1,
+Buzzer 5V,Piezo,0.95,unsorted box (clear box) A4,FALSE,1,
+Flora Neopixel Ring,FLORA,9.95,unsorted box (black box) A4,FALSE,1,
+1 cm screws,none,0,unsorted box (black box) A4,FALSE,19,
+Textured Washer,none,0,unsorted box (black box) A4,FALSE,2,
+NeoPixel Stix 8 x Ws2812 LED,Adafruit,5.95,unsorted box (black box) A4,FALSE,1,adafru.it/1426
+SPDT Slide Switch,Adafruit,0.95,unsorted box (black box) A4,FALSE,3,adafru.it/805
+Reusable Adhesive Putty,Bluestick,1.59,unsorted box (black box) A4,FALSE,1,
+PIR motion sensor,Adafruit,10.13,unsorted box (sparkfun box) A4,FALSE,1,adafru.it/189
+TMP36 temperature sensor,Arduino,1.5,unsorted box (sparkfun box) A4,FALSE,1,
+Analog push button numbers,none,0,unsorted box (sparkfun box) A4,FALSE,1,
+Arcade button quick-connect wires,none,4.95,unsorted box (JohnWallen box) A4,FALSE,1,adafru.it/1152
+Wireless bluetooth attenna,none,0,unsorted box (JohnWallen box) A4,FALSE,1,
+74HC595 Shift Register,none,2.75,unsorted box (JohnWallen box) A4,FALSE,4,adafru.it/450
+Clear Small LED Lights,none,0.5,unsorted box (JohnWallen box (clear box) ) A4,FALSE,45,
+9V 1000mA Pwr Supply,none,9.95,unsorted box (JohnWallen box) A4,FALSE,2,
+4-Cell AA batterybox,none,6.99,unsorted box (JohnWallen box) A4,FALSE,1,
+Rubber Bumper 4 pack,none,0,unsorted box (JohnWallen box) A4,FALSE,1,
+Desktop Power Switch,Dell,6.5,unsorted box (JohnWallen box) A4,FALSE,1,Pwb 92316
+female to female jumper wires,none,0,unsorted box (JohnWallen box) A4,FALSE,1,
+Temperature-humidity sensor,Adafruit,15,unsorted box (JohnWallen box) A4,TRUE,1,
+Full sized breadboard,Adafruit,5.95,unsorted box (JohnWallen box) A4,TRUE,1,
+Double full sized breadboard,none,15,unsorted box (JohnWallen box) A4,FALSE,1,
+1/6W 330 Carbon Film resistors,RoHs,0,unsorted box (starterkit box) A4,FALSE,44,
+330 Ohm Resistor,none,0,unsorted box (starterkit box) A4,FALSE,11,
+1/6W 10k Carbon Film resistors,Rohs,0,unsorted box (starterkit box) A4,FALSE,48,
+Clear Small LED Lights,none,0.5,unsorted box (starterkit box) A4,FALSE,1,
+Diffused LED - Red 10mm,Sparkfun,0.5,unsorted box (starterkit box) A4,FALSE,10,
+Diffused LED - Yellow 10mm,Sparkfun,0.5,unsorted box (starterkit box) A4,FALSE,11,
+Momentary Push Buttons,Aruino/Sparkfun,0.5,unsorted box (starterkit box) A4,FALSE,2,
+Micro Servo 9g,none,3.99,unsorted box (starterkit box) A4,FALSE,1,A0090
+PIR motion sensor,Adafruit,10.13,unsorted box (starterkit box) A4,FALSE,1,adafru.it/189
+Flex Sensor,Spectrasymbol/Jameco Electronics,7.95,unsorted box (starterkit box) A4,FALSE,1,
+female to female jumper wires,none,0,unsorted box (starterkit box) A4,FALSE,12,
+TMP36 temperature sensor,Arduino,1.5,unsorted box (starterkit box) A4,FALSE,1,
+large (for it's size) led,none,0,unsorted box (starterkit box) A4,FALSE,1,
+Trimpot 10K with Knob,none,0.95,unsorted box (starterkit box) A4,FALSE,1,
+Asynchronous Motor,Hing Lung Motor mfy,0,unsorted box (starterkit box) A4,FALSE,1,
+MID  0640413 usb device,none,0,unsorted box (starterkit box) A4,FALSE,1,
+Class 6 micro sdhc memory card USB 2.0,Transcend,5.5,C3,FALSE,4,
+LV max sonar EZ,MaxRobitx inc,24.99,"Tackle box-top portion , C3",FALSE,1,
+Buzzer 5V,Piezo,0.95,"Tackle box-top portion , C3",FALSE,1,
+Flex Sensor,Spectrasymbol/Jameco Electronics,7.95,"Tackle box-top portion , C3",FALSE,1,
+Position Sensor,Spectrasymbol/Jameco Electronics,6.95,"Tackle box-top portion , C3",FALSE,1,11p4
+Ambient Light Sensor Phototransistor ,none,0.22,"Tackle box-top portion , C3",FALSE,1,
+36 pin headers,none,5.95,"Tackle box-top portion , C3",FALSE,1,
+TMP36 temperature sensor,Arduino,1.5,"Tackle box-top portion , C3",FALSE,2,
+5VDC power relay,none,2.77,"Tackle box-top portion , C3",FALSE,1,
+Trimpot 10K with Knob,none,0.95,"Tackle box-top portion , C3",FALSE,2,u 103 3903
+74HC595 Shift Register,none,2.75,"Tackle box-top portion , C3",FALSE,1,adafru.it/450
+1/6W 10k Carbon Film resistors,Rohs,0,"Tackle box-top portion , C3",FALSE,25,
+Mini pushbuton Switch,Rohs,0.35,"Tackle box-top portion , C3",FALSE,2,COM 00097
+Momentary Push Buttons,Aruino/Sparkfun,0.5,"Tackle box-top portion , C3",FALSE,2,COM 09190
+Tangled jumper wire,none,0,"Tackle box-bottom portion (matchbox) , C3",TRUE,2,
+100 Ohm Resistor,Aruino/Sparkfun,0.05,"Tackle box-bottom portion (matchbox) , C3",FALSE,23,
+220 Ohm Resistor,Aruino/Sparkfun,0.05,"Tackle box-bottom portion (matchbox) , C3",FALSE,23,
+330 Ohm Resistor,Aruino/Sparkfun,0.05,"Tackle box-bottom portion (matchbox) , C3",FALSE,25,
+470 Ohm Resistor,Aruino/Sparkfun,0.05,"Tackle box-bottom portion (matchbox) , C3",FALSE,25,
+680 Ohm Resistor,Aruino/Sparkfun,0.05,"Tackle box-bottom portion (matchbox) , C3",FALSE,25,
+1k Ohm Resistor,Aruino/Sparkfun,0.05,"Tackle box-bottom portion (matchbox) , C3",FALSE,25,
+2.2k Ohm Resistor,Aruino/Sparkfun,0.05,"Tackle box-bottom portion (matchbox) , C3",FALSE,20,
+3.3k Ohm Resistor,Aruino/Sparkfun,0.05,"Tackle box-bottom portion (matchbox) , C3",FALSE,16,
+4.7k Ohm Resistor,Aruino/Sparkfun,0.05,"Tackle box-bottom portion (matchbox) , C3",FALSE,22,
+10k Ohm Resistor,Aruino/Sparkfun,0.05,"Tackle box-bottom portion (matchbox) , C3",FALSE,30,
+22k Ohm Resistor,Aruino/Sparkfun,0.05,"Tackle box-bottom portion (matchbox) , C3",FALSE,30,
+47k Ohm Resistor,Aruino/Sparkfun,0.05,"Tackle box-bottom portion (matchbox) , C3",FALSE,30,
+100k Ohm Resistor,Aruino/Sparkfun,0.05,"Tackle box-bottom portion (matchbox) , C3",FALSE,30,
+330k Ohm Resistor,Aruino/Sparkfun,0.05,"Tackle box-bottom portion (matchbox) , C3",FALSE,30,
+1M Ohm Resistor,Aruino/Sparkfun,0.05,"Tackle box-bottom portion (matchbox) , C3",FALSE,30,
+0 Ohm Resistor,Aruino/Sparkfun,0.05,"Tackle box-bottom portion (matchbox) , C3",FALSE,24,
+1.5 Ohm Resistor,Aruino/Sparkfun,0.05,"Tackle box-bottom portion (matchbox) , C3",FALSE,30,
+4.7 Ohm Resistor,Aruino/Sparkfun,0.05,"Tackle box-bottom portion (matchbox) , C3",FALSE,30,
+10 Ohm Resistor,Aruino/Sparkfun,0.05,"Tackle box-bottom portion (matchbox) , C3",FALSE,30,
+47 Ohm Resistor,Aruino/Sparkfun,0.05,"Tackle box-bottom portion (matchbox) , C3",FALSE,30,
+100 Ohm Resistor 2%,Aruino/Sparkfun,0.05,"Tackle box-bottom portion (it's a mess) , C3",FALSE,58,
+stackable headers 8 pin,Aruino/Sparkfun,0.5,"Tackle box-bottom portion (bag) , C3",FALSE,3,adafru.it/85
+1/6W 330 Carbon Film resistors,RoHs,0,"Tackle box-bottom portion (bag) , C3",FALSE,25,
+Black hookup wire spool,Adafruit,2.5,"Tackle box-bottom portion, C3",FALSE,1,adafru.it/290
+Arduino Uno R2,Arduino,15.52,"Tackle box-bottom portion, C3",FALSE,2,
+Green/pink jumper wire,none,0,"Tackle box-bottom portion, C3",FALSE,2,
+Small Wire cutters,Sparkfun,4.95,"Tackle box-bottom portion, C3",FALSE,1,
+Loose Solder Wire,none,0,"Tackle box-bottom portion, C3",FALSE,1,
+EVGA S-video cable,EVGA,0.99,"Tackle box-bottom portion (bag), C3",FALSE,1,
+TMP36 temperature sensor,Arduino,1.5,"Clear box, C3",FALSE,5,
+Optical Switches QRD1114,none,1.29,"Clear box, C3",FALSE,1,
+DC 105z Ceramic Capictor,none,0,"Clear box, C3",FALSE,1,
+104 ceramic capacitors,none,0.19,"Clear box, C3",FALSE,1,
+25V capacitor,none,0.07,"Clear box, C3",FALSE,1,
+320 Ohm Resistor,none,0,"Clear box, C3",FALSE,1,
+82 Ohm Resistor,none,0,"Clear box, C3",FALSE,1,
+10k Ohm Resistor,none,0,"Clear box, C3",FALSE,1,
+330 Ohm Resistor,none,0,"Clear box, C3",FALSE,4,
+56 Ohm Resistor,none,0,"Clear box, C3",FALSE,1,
+10 Ohm Resistor 5%,none,0,"Clear box, C3",FALSE,1,
+2.2k Ohm Resistor 5%,none,0,"Clear box, C3",FALSE,3,
+4.7k Ohm Resistor 5%,none,0,"Clear box, C3",FALSE,5,
+280 Ohm Resistor 5%,none,0,"Clear box, C3",FALSE,1,
+220 Ohm Resistor 5%,none,0,"Clear box, C3",FALSE,5,
+10k Ohm Resistor 5%,none,0,"Clear box, C3",FALSE,2,
+Diffused LED - Yellow 10mm,Sparkfun,0.5,"Clear box, C3",FALSE,4,COM 10634
+Diffused LED - Red 10mm,Sparkfun,0.5,"Clear box, C3",FALSE,4,COM 10632
+Temperature-humidity sensor,Adafruit,15,With Stephen Kinser,TRUE,1,
+Breadboard,none,0,With Stephen Kinser,TRUE,1,
+4GB SD Card,none,3.99,With Stephen Kinser,TRUE,1,
+Raspberry Pi 2 model B V1.1,Raspberry Pi,39.95,With Stephen Kinser,TRUE,1,
+Rohs 400 pts halfsized breadboard,none,11.49,"arcade box, C4",TRUE,1,
+10 pcs DC +5v LED Push button,Timeharvest,3,"arcade box, C4",TRUE,4,
+Pockethub usb,Kensington,12.99,"arcade box, C4",FALSE,1,
+Arduino Uno R3,Arduino,10.67,"arcade box, C4",TRUE,1,
+Full sized breadboard,Adafruit,5.95,"arcade box, C4",TRUE,1,
+Phototransistor IR Chip,none,0.16,"Clear box, C3",FALSE,4,
+Photoresistor,none,0.99,arcade box,TRUE,1,
+Momentary Push Buttons,Aruino/Sparkfun,0.5,arcade box,TRUE,1,
+Pi cobbler Breakout,Adafruit,6.5,arcade box,TRUE,1,
+Arduino Uno R3,Arduino,10.67,C3,TRUE,1,
+Arduino Wifi Sheild,Arduino,74.95,C3,TRUE,1,
+ESD Safe Rework Station with Solder Iron,Hakko,236.39,Front Desk,FALSE,1,

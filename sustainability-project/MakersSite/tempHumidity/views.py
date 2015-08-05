@@ -1,3 +1,4 @@
+#tempHumidity views
 from django.template import RequestContext, loader
 from django.shortcuts import get_object_or_404, render
 from django.core.urlresolvers import reverse
@@ -19,7 +20,7 @@ class IndexView(generic.ListView):
         return tempHumidity.objects.filter(
         date_rec__lte=timezone.now()
         ).order_by('-date_rec')[:5]
- 
+
 
 class DetailView(generic.DetailView):
     model = tempHumidity
