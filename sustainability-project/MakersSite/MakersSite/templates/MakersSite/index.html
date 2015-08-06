@@ -3,32 +3,137 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
 
 <html lang="en">
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+{% load staticfiles %}
+<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">-->
+
+<!--<link rel="stylesheet" href="/static/css/bootstrap.css" >-->
+<!--
+When you give Hitler the sudetenland
+-->
 <head>
-    <title>My Home Page</title>
+    <title>Maker's Home Page</title>
 
 </head>
+<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" >
     <body>
-
+<div class="page-wrap">
   <nav class="navbar navbar-default">
 
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Makers Home Page</a>
+      <a class="navbar-brand" href="{% url 'MakersSite' %}">Makers Home Page</a>
     </div>
     <div>
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        <li class="active"><a href="{% url 'MakersSite' %}">Home</a></li>
         <li><a href="#">Ongoing projects</a></li>
         <li><a href="/userInfo">Members</a></li>
-        <li><a href="#">Other stuff</a></li>
-      </ul>
-    </div>
+        <!-- http://www.w3schools.com/bootstrap/bootstrap_dropdowns.asp -->
+       <!-- <li>
+          <div class="dropdown">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+            Other Stuff
+            <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+    <li><a href="{% url 'tempHumidity:index' %}">Temperature Humidity</a></li>
+    <li><a href="#">Data Mining Sensors 2</a></li>
+    <li><a href="#">Data Mining Sensors 3</a></li>
+      </ul> </div>
+</li>-->
+        <!--http://getbootstrap.com/components/#navbar-->
+        <li role="presentation" class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="{% url 'tempHumidity:index' %}">Temperature Humidity</a></li>
+            <li><a href="#">Data Mining Sensors 2</a></li>
+            <li><a href="#">Data Mining Sensors 3</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+    </ul>
+      </div>
   </div>
 </nav>
+</div>
+<!--
+<div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+  </ul>
+</div>-->
+<!--
+<div class="container">
+  <div class="row-sm-5 row-md-6">TODO For someone who actually knows css.</div>
+  <div class="row-sm-5 row-md-6">For those who like the back end: http://www.tangowithdjango.com/book17/
+As far as back end goes, I am using Pycharm as editor, Python 2.7 (numpy, scipy, and sklearn)</div>
+</div>
+-->
+  <!--
+    <blockquote class="blockquote-reverse">
+  <p>TODO For someone who actually knows css.</p>
+  <p>For those who like the back end: http://www.tangowithdjango.com/book17/
+As far as back end goes, I am using Pycharm as editor, Python 2.7 (numpy, scipy, and sklearn)</p>
+</blockquote>
+-->
+<div class="page-wrap">
+  <div class="bcontainer">
+  <div class="container">
+
+      <dt>TODO</dt>
+      <ul>
+        <li> Generate Content to look at</li>
+        <li> make the content stylized</li>
+        <li> choose background images</li>
+        <li> Show off Three-D graphics</li>
+        <li> Make R graphs with R Markdown</li>
+        <li> Centralized navbar</li>
+      </ul>
+
+    </div>
+  <div class="container">
+    <table class="table table-hover">
+      <thead><tr>
+        <td>Todo List</td> <td>Person Assigned</td></tr></thead>
+      <tbody>
+      <tr><td>Generate Content to look at</td> <td>Stephen Kinser</td></tr>
+      <tr><td>Make the content stylized</td> <td>Stephen Kinser</td></tr>
+      <tr><td>Choose Background Images</td> <td>Stephen Kinser</td></tr>
+
+      </tbody>
+
+    </table>
+</div>
+
+<div class="container">
+  <h1> Philosphy Behind Things</h1>
+  <p> Makers, Hackers, and tinkerers: These people focus on the Hands on approach of things, it is less important to really know <u>why</u> things are.
+    It is more important to know <u>how</u> things work. I personally will only go half way through a tutorial inorder to get through the basics. Then I start
+  messing around with the tools I know and if I need to know anything beyond the basics I will look it up. I typically forget how it works, so multiple lookups makes me momorize the key concepts.
+  That's not the <i>best</i> way of learning concepts, but it is the most fun way.</p>
+  <p> <b>However</b>, in professional and more serious contexts, it is better to read up and sit and think for several hours, then to get to Hacking.
+    Hacking mindsets makes writing comments break flow and makes writing comments a very boring thing.</p>
 
 
+</div>
+    </div>
+  </div>
+<div id="bg">
+      <img src="{% static 'images/ITAOTS.jpg' %}"alt="">
+</div>
 
-<p>TODO For someone who actually knows css</p>
+    <!--<div class="container">-->
+      <!--https://docs.djangoproject.com/en/1.4/howto/static-files/
+      this is a basic example-->
+      <!--<img src="{% static 'images/Django.jpg' %}"/>
+    </div>-->
+
+
 </body>
 </html>
