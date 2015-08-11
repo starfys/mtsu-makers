@@ -1,0 +1,16 @@
+running ping cnet.com runs fine:
+
+running route -n:
+destination   gateway	 genmask	 flags	 metric	 ref	 use	 Iface
+0.0.0.0       10.80.16.1  0.0.0.0	  UG	  0 	 0 	 0 	 wlan0
+10.80.16.0    0.0.0.0 	  255.255.240.0   U 	  0 	 0 	 0 	 wlan0
+16.254.0.0    0.0.0.0 	  255.255.0.0 	  U 	  0 	 0 	 0 	 eth0
+
+running ifconfig:
+eth0
+lo
+wlan0
+
+ping on 10.80.16.1 runs fine:
+
+needs to be whitelisted by itd
