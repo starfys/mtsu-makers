@@ -11,7 +11,14 @@ coder password: raspberry
 for use in html, go over the Django templates
 for use in R use the dplyr library, I will have a running R script soon
 
-to add do python manage.py
+to add do python manage.py makemigrations <appname>
+python manage.py sqlmigrate <appname> <four digit number of mostr recentupdate>
+python manage.py migrate
+
+check permissions if getting unusual errors:
+change it to: sudo chown <yourname> <filename>
+might have to do something to change that up
+if still getting errors try doing chmod 776, just omething to enable write permissions
 
 ####### For running / booting up server #######
 python manage.py runserver stevensheffey.me:9000 

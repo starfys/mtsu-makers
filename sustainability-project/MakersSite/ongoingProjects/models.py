@@ -20,7 +20,7 @@ from partList.models import part
 class project(models.Model):
   projectName= models.CharField(max_length=64)
   #colaborators = models.ManyToManyField(Human, blank= True, related_name="Colab")
-  partsList= models.ManyToManyField(part, blank= True, related_name="Part_List")
+# partsList= models.ManyToManyField(part, blank= True, related_name="Part_List")
   start_date = models.DateTimeField('Start Date')
   finish_date= models.DateTimeField('Finish Date')
 

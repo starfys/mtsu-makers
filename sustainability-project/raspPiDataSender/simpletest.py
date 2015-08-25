@@ -52,14 +52,15 @@ while True:
 		print 'Temp={0:0.1f}*C  Humidity={1:0.1f}%'.format(temperature, humidity)
 	else:
 		print 'Failed to get reading. Try again!'
-        time.sleep(5)
+        time.sleep(300)
         try:
-                requests.post( "http://stevensheffey.me:9000", data={ 'pi_num':pi_id, 'temperature':temperature, 'humidity': humidity, 'date_rec':time.ctime()) } )
+                requests.post( "http://stevensheffey.me:9000/tempHumidity/submit", data={ 'pi_num':pi_id, 'temperature':temperature, 'humidity': humidity, 'date_rec':time.time() } )
         except:
+                print "failed to connect to server"
                 #the expected filename should be Tue.Aug.11.pinum1.txt
                 #should take time like once a week to check on sd cards, so this doesn't do it ad infinitum, 
                 filename=".".join(time.ctime().split(' ')[0:3])+".pinum"+str(pi_id)+".txt"
                 with open(filename,'a') as csvfile:
                         fieldnames=['pi_num', 'temperature','humidity', 'date_rec']
                         writer= csv.Dictwriter(csvfile, fieldnames=fieldnames)
-                        writer.writerow({ 'pi_num':pi_id, 'temperature':temperature, 'humidity': humidity, 'date_rec':time.ctime()) })
+                        writer.writerow({ 'pi_num':pi_id, 'temperature':temperature, 'humidity': humidity, 'date_rec':time.time()) })
