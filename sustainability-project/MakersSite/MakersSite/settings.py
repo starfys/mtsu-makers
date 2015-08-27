@@ -29,7 +29,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+#http://www.tangowithdjango.com/book17/chapters/login.html
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
@@ -40,7 +40,8 @@ INSTALLED_APPS = (
 	'tempHumidity',
     'MakersSite',
     'ongoingProjects',
-    'partList'
+    'partList',
+    'userInfo'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -108,7 +109,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR,"css"),
+    os.path.join(BASE_DIR,STATIC_URL,"js"),
     os.path.join(BASE_DIR,STATIC_URL,"images"),
     os.path.join(BASE_DIR,STATIC_URL,"css")
 )
@@ -118,3 +119,10 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
+#http://www.tangowithdjango.com/book17/chapters/login.html
+PASSWORD_HASHERS = (
+#    'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
+#    'django.contrib.auth.hashers.BCryptPasswordHasher',
+    'django.contrib.auth.hashers.PBKDF2PasswordHasher',
+    'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
+    )

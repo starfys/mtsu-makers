@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+  
+<html>
+  {% load staticfiles %}
+  <head>
+    <title>Maker Site - {% block title %} Testing {% endblock %} </title></head>
+
+  <body>
+    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" >
+<div class="page-wrap">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Makers Home Page</a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="{% url 'MakersSite' %}">Home</a></li>
+        <li><a href="/userInfo">Members</a></li>
+	<li><a href="{% url 'userInfo:register' %}">Sign up</a></li>
+
+        <li><a href="#">Other stuff</a></li>
+	        <li role="presentation" class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="{% url 'tempHumidity:index' %}">Temperature Humidity</a></li>
+            <li><a href="#">Data Mining Sensors 2</a></li>
+            <li><a href="#">Data Mining Sensors 3</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+
+	  </ul>
+		</li>
+		
+		</ul>
+    </div>
+  </div>
+</nav>
+</div>  
+    {% block body_block %} {% endblock %} 
+
+  </body>
+</html>

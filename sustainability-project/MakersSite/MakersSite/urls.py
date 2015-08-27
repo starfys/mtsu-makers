@@ -6,7 +6,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     # Examples:
 	#url(r'^blog/', include('blog.urls')),
-	#url(r'^userInfo/', include('userInfo.urls')),
+	url(r'^userInfo/', include('userInfo.urls', namespace='userInfo'), name= 'userIno'),
   	url(r'^$', 'MakersSite.views.index',  name='MakersSite'),
 	url(r'^tempHumidity/',include('tempHumidity.urls', namespace='tempHumidity'), name='tempHumidity'),
 	url(r'^admin/', include(admin.site.urls)),

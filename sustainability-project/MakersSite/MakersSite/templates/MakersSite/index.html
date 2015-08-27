@@ -1,66 +1,15 @@
 <!--MakersSiteHtml -->
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
-
-<html lang="en">
-{% load staticfiles %}
+{% extends 'MakersSite/title.html' %}
+  {% load staticfiles %}
 <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">-->
 
 <!--<link rel="stylesheet" href="/static/css/bootstrap.css" >-->
 <!--
 When you give Hitler the sudetenland
 -->
-<head>
-    <title>Maker's Home Page</title>
 
-</head>
-<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" >
-    <body>
-<div class="page-wrap">
-  <nav class="navbar navbar-default">
-
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="{% url 'MakersSite' %}">Makers Home Page</a>
-    </div>
-    <div>
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="{% url 'MakersSite' %}">Home</a></li>
-        <li><a href="#">Ongoing projects</a></li>
-        <li><a href="/userInfo">Members</a></li>
-        <!-- http://www.w3schools.com/bootstrap/bootstrap_dropdowns.asp -->
-       <!-- <li>
-          <div class="dropdown">
-          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-            Other Stuff
-            <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-    <li><a href="{% url 'tempHumidity:index' %}">Temperature Humidity</a></li>
-    <li><a href="#">Data Mining Sensors 2</a></li>
-    <li><a href="#">Data Mining Sensors 3</a></li>
-      </ul> </div>
-</li>-->
-        <!--http://getbootstrap.com/components/#navbar-->
-        <li role="presentation" class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-
-          <ul class="dropdown-menu">
-            <li><a href="{% url 'tempHumidity:index' %}">Temperature Humidity</a></li>
-            <li><a href="#">Data Mining Sensors 2</a></li>
-            <li><a href="#">Data Mining Sensors 3</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-          
-        </li>
-    </ul>
-
-      </div>
-  </div>
-</nav>
-</div>
 <!--
 <div class="dropdown">
   <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
@@ -84,7 +33,9 @@ As far as back end goes, I am using Pycharm as editor, Python 2.7 (numpy, scipy,
   <p>For those who like the back end: http://www.tangowithdjango.com/book17/
 As far as back end goes, I am using Pycharm as editor, Python 2.7 (numpy, scipy, and sklearn)</p>
 </blockquote>
--->
+    -->
+  {% block title %} Home {% endblock %}
+  {% block body_block %}
 <div class="page-wrap">
   <div class="bcontainer">
   <div class="container">
@@ -92,11 +43,14 @@ As far as back end goes, I am using Pycharm as editor, Python 2.7 (numpy, scipy,
       <dt>TODO</dt>
       <ul>
         <li> Generate Content to look at</li>
-        <li> make the content stylized</li>
+        <li><strike> make the content stylized</strike></li>
         <li> choose background images</li>
         <li> Show off Three-D graphics</li>
         <li> Make R graphs with R Markdown</li>
-        <li> Centralized navbar</li>
+        <li><strike> Centralized navbar</strike></li>
+	<li> Research LED screen </li>
+	<li> Begin web scraping class </li>
+	<li> Begin Spark Parallel class with Python </li>
       </ul>
 
     </div>
@@ -138,5 +92,4 @@ As far as back end goes, I am using Pycharm as editor, Python 2.7 (numpy, scipy,
     </div>-->
 
 
-</body>
-</html>
+{% endblock %}
