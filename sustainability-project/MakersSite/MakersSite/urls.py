@@ -15,5 +15,5 @@ urlpatterns = [
             'document_root': settings.MEDIA_ROOT,
         }),
 	#url(r'^partList/', include('partList.urls')),
-	#url(r'^ongoingProjects/', include('ongoingProjects.urls'))
+	url(r'^ongoingProjects/', include('ongoingProjects.urls'))
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -2,6 +2,7 @@ from django.db import models
 #from userInfo.models import Human
 #from django.userInfo.models import Human
 from partList.models import part
+from userInfo.models import UserProfile
 #from multivalue import separateValues
 # http://stackoverflow.com/questions/1110153/what-is-the-most-efficent-way-to-store-a-list-in-the-django-models
 
@@ -20,7 +21,8 @@ from partList.models import part
 class project(models.Model):
   projectName= models.CharField(max_length=64)
   #colaborators = models.ManyToManyField(Human, blank= True, related_name="Colab")
-# partsList= models.ManyToManyField(part, blank= True, related_name="Part_List")
+  colaborators= models.OneToOneField(UserProfile)
+  partsList= models.ManyToManyField(part, blank= True, related_name="Part_List")
   start_date = models.DateTimeField('Start Date')
   finish_date= models.DateTimeField('Finish Date')
 

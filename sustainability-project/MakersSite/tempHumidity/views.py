@@ -18,10 +18,10 @@ class IndexView(generic.ListView):
     context_object_name = 'Latest_Temps_List'
     
     def get_queryset(self):
-        """Return the last five published questions."""
+        """Return the last ten published temperaturess."""
         return tempHumidity.objects.filter(
         date_rec__lte=timezone.now()
-        ).order_by('-date_rec')[:5]
+        ).order_by('-date_rec')[:10]
     
 
 class DetailView(generic.DetailView):

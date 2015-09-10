@@ -1,0 +1,21 @@
+<!--tempHumidity -->
+{% extends 'MakersSite/title.html' %}
+
+{% block body_block %}
+{% if Latest_Users_List %}
+<div class="container">
+<table class = "table table-striped">
+
+
+    {% for user in Latest_Users_List %}
+        
+		<td>{{user.user.username}}</td>
+		<td>{{user.user.first_name}}</td>
+		<td>{{user.githubURL}}</td></tr>
+    {% endfor %}
+</table>
+</div>
+{% else %}
+    <p>no Users Signed up</p>
+{% endif %}
+{% endblock %}

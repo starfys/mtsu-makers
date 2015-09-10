@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+{% extends 'MakersSite/title.html' %}
+{% load staticfiles %}
+
+  {% block body_block %}
+<form method="post" id="matrixsize">
+        Array 1 x size:
+            <input type="number" id="1x">
+        Array 1 y size:
+            <input type="number" id="1y">
+        Array 2 x size:
+            <input type="number" id="2x">
+        Array 1 y size:
+            <input type="number" id="2y">
+
+        </form>
+
+        <button onclick="both()">confirm sizes</button>
+
+        <input type='file' accept='text/plain' onchange='openFile(event)'>
+        <div id="inputform1"></div>
+        <div id="inputform2"></div>
+        <div id='output'></div><br>
+        <canvas id="input" width="900" height="300"></canvas>
+        <p id="requestnext"><p>
+        <canvas id="math" width="200" height="1000"></canvas>
+        <canvas id="answer" width="1000" height="1000"></canvas>
+
+<!--<script type="text/javascript" src="file.js"></script>-->
+    
+     <script src="form.js"></script>
+    <script src="{% static 'js/form.js' %}"></script>
+
+{% endblock %}
+

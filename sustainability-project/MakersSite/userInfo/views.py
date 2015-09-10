@@ -5,9 +5,9 @@ from django.http import HttpResponseRedirect, HttpResponse
 
 # Create your views here.
 #http://www.tangowithdjango.com/book17/chapters/login.html
-
+from django.contrib.auth.models import User                                             
 from userInfo.forms import UserForm, UserProfileForm
-from userInfo.models import Category
+from userInfo.models import Category, UserProfile
 
 
 
@@ -16,7 +16,7 @@ class IndexView(generic.ListView):
     context_object_name = 'Latest_Users_List'
     def get_queryset(self):
         """Return the most recent users."""
-        return UserProfile.objects.order_by('-user.username')[:5]
+        return UserProfile.objects.order_by('-user')[:5]
 
 
 def user_login(request):
@@ -42,7 +42,7 @@ def user_login(request):
                 # If the account is valid and active, we can log the user in.
                 # We'll send the user back to the homepage.
                 login(request, user)
-                return HttpResponseRedirect('MakersSite')
+                return HttpResponseRedirect('/')
             else:
                 # An inactive account was used - no logging in!
                 return HttpResponse("Your Rango account is disabled.")
@@ -56,7 +56,7 @@ def user_login(request):
     else:
         # No context variables to pass to the template system, hence the
         # blank dictionary object...
-        return render(request, 'rango/login.html', {})
+        return render(request, 'userInfo/login.html', {})
 
 def register(request):
 
@@ -84,7 +84,7 @@ def register(request):
             # Now sort out the UserProfile instance.
             # Since we need to set the user attribute ourselves, we set commit=False.
             # This delays saving the model until we're ready to avoid integrity problems.
-            profile = profile_form.save(commit=False)
+            profile = profile_form.save(commit= False)
             profile.user = user
 
             # Did the user provide a profile picture?
@@ -92,10 +92,10 @@ def register(request):
             if 'picture' in request.FILES:
                 profile.picture = request.FILES['picture']
 
-                # Now we save the UserProfile model instance.
-                profile.save()
-                # Update our variable to tell the template registration was successful.
-                registered = True
+            # Now we save the UserProfile model instance.
+            profile.save()
+            # Update our variable to tell the template registration was successful.
+            registered = True
 
             # Invalid form or forms - mistakes or something else?
             # Print problems to the terminal.
