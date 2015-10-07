@@ -10,3 +10,6 @@ from django.views.decorators.http import require_POST
 #http://grasshopperpebbles.com/django-python/how-to-set-up-a-home-page-with-django/
 def index (request):
   return render_to_response('MakersSite/index.html', context_instance=RequestContext(request))
+
+def street (request):
+  return render_to_response('MakersSite/street.html', context_instance=RequestContext(request))

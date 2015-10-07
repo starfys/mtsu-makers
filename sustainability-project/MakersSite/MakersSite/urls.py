@@ -8,7 +8,8 @@ urlpatterns = [
 	#url(r'^blog/', include('blog.urls')),
 	url(r'^userInfo/', include('userInfo.urls', namespace='userInfo'), name= 'userIno'),
   	url(r'^$', 'MakersSite.views.index',  name='MakersSite'),
-	url(r'^tempHumidity/',include('tempHumidity.urls', namespace='tempHumidity'), name='tempHumidity'),
+    url(r'^streetview', 'MakersSite.views.street',  name='MakersSite'),
+       url(r'^tempHumidity/',include('tempHumidity.urls', namespace='tempHumidity'), name='tempHumidity'),
 	url(r'^admin/', include(admin.site.urls)),
 	#https://docs.djangoproject.com/en/1.4/howto/static-files/#staticfiles-development
 	url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {
