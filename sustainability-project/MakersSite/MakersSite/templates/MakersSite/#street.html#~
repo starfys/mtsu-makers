@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+   {% load staticfiles %}
+  <head>
+    <meta charset="utf-8">
+    <title>Street View events</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/streetview.css' %}" >
+  <script src="{% static 'js/customestreetviewfuno.js' %}"></script>
+     
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJJ3BMM7Fx7qMT0kfcaBHGU1kMsYN0z2w&signed_in=true"></script>
+    <script>
+         </script>
+  </head>
+  <body>
+<table>
+    <td><input type="text" id="address"/></td>
+	  <td><button id="nonimportant" onclick="codeAddress()">address</td>
+</table>
+    <div id="pano"></div>
+    <!--<div id="floating-panel">
+      <table>
+	<tr>
+	  <td><b>Position</b></td><td id="position-cell">&nbsp;</td>
+	</tr>
+	<tr>
+	  <td><b>POV Heading</b></td><td id="heading-cell">270</td>
+	</tr>
+	<tr>
+	  <td><b>POV Pitch</b></td><td id="pitch-cell">0.0</td>
+	</tr>
+	<tr>
+	  <td><b>Pano ID</b></td><td id="pano-cell">&nbsp;</td>
+	</tr>
+	
+	<tr>
+	  <td><button id="thing" onclick="forward()">Thing</button></td>
+	  <td><button id="thing" onclick="backward()">Thing</button></td>
+	  <td><button id="thing" onclick="up()">Thing</button></td>
+	  <td><input type="text" id="address"/></td>
+	  <td><button id="nonimportant" onclick="codeAddress()">address</td>
+	</tr>
+	<table id="links_table"></table>
+      </table>-->
+    </div>
+    
+      <script src="{% static 'js/other.js' %}"></script>
+      <script
+       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJJ3BMM7Fx7qMT0kfcaBHGU1kMsYN0z2w&signed_in=true&callback=initPano"
+       async defer>
+    </script>
+  </body>
+  </html>
