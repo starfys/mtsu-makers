@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+  {% load staticfiles %}
+
 <html>
   <head>
     <meta charset="utf-8">
@@ -42,30 +44,8 @@
       }
     </style>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJJ3BMM7Fx7qMT0kfcaBHGU1kMsYN0z2w&signed_in=true"></script>
-    <script>
-      function forward(){
-      panorama.setPosition({lat: panorama.getPosition().lat()+0.0002*Math.sin(panorama.getPov().heading) ,
-      lng: panorama.getPosition().lng()+0.0002*Math.cos(panorama.getPov().heading)} );
-//      console.log("function called");
-      }
-      function backward(){
-      panorama.setPosition({lat: panorama.getPosition().lat()-0.0002*Math.sin(panorama.getPov().heading),
-      lng: panorama.getPosition().lng()-0.0002*Math.cos(panorama.getPov().heading)} );
-      }
-      function left(){
     
-      panorama.setPov({
-      heading: (panorama.getPov().heading+15)% 180,
-      pitch: panorama.getPov().pitch,
-      })
-      }
-      function right(){
-    
-      panorama.setPov({
-      heading: (panorama.getPov().heading-15)%180,
-      pitch: panorama.getPov().pitch,
-      })
-      }
+    <script src="{% static 'js/vandyhacks.js' %}">
     </script>
   </head>
   <body>
@@ -96,64 +76,7 @@
 	<table id="links_table"></table>
       </table>
     </div>
-    <script>
-      var panorama;
-      function initPano() {
-      panorama = new google.maps.StreetViewPanorama(
-      document.getElementById('pano'), {
-      position: {lat: 37.869, lng: -122.255},
-      pov: {
-      heading: 270,
-      pitch: 0
-      },
-      visible: true,
-      linksControl: false,
-      panControl: false,
-      enableCloseButton: false
-      });
-
-      panorama.addListener('pano_changed', function() {
-      var panoCell = document.getElementById('pano-cell');
-      panoCell.innerHTML = panorama.getPano();
-      });
-
-      panorama.addListener('links_changed', function() {
-      var linksTable = document.getElementById('links_table');
-      while (linksTable.hasChildNodes()) {
-      linksTable.removeChild(linksTable.lastChild);
-      }
-      var links = panorama.getLinks();
-      for (var i in links) {
-      var row = document.createElement('tr');
-      linksTable.appendChild(row);
-      var labelCell = document.createElement('td');
-      labelCell.innerHTML = '<b>Link: ' + i + '</b>';
-      var valueCell = document.createElement('td');
-      valueCell.innerHTML = links[i].description;
-      linksTable.appendChild(labelCell);
-      linksTable.appendChild(valueCell);
-      }
-      });
-
-      /*    panorama.addListener('thing', function(){
-      //panorama.setPosition(panorama.getPosition());
-      alert(panorama.getPosition());
-      });*/
-      panorama.addListener('position_changed', function() {
-      var positionCell = document.getElementById('position-cell');
-      positionCell.firstChild.nodeValue = panorama.getPosition() + '';
-      });
-
-      panorama.addListener('pov_changed', function() {
-      var headingCell = document.getElementById('heading-cell');
-      var pitchCell = document.getElementById('pitch-cell');
-      headingCell.firstChild.nodeValue = panorama.getPov().heading + '';
-      pitchCell.firstChild.nodeValue = panorama.getPov().pitch + '';
-      });
-      }
-      
-
-
+    <script src="{% static 'js/vandyhackslower.js' %}">
     </script>
     <script
        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJJ3BMM7Fx7qMT0kfcaBHGU1kMsYN0z2w&signed_in=true&callback=initPano"
